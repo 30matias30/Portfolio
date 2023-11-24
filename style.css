@@ -1,0 +1,91 @@
+* {
+    /* outline: solid 1px; */
+    color: antiquewhite;
+    overflow-x: hidden;
+}
+
+:root {
+    --background: #001220;
+    --background2: #021c30;
+    --light: #003762;
+}
+
+/* ROOT */
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    /* background-color: red; */
+
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    color: antiquewhite;
+
+    height: 70vh;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    background-color: var(--light);
+
+    margin-top: -4px;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    /* background-color: aquamarine; */
+}
+
+.element-container {
+    width: 40%;
+}
+
+/* FIN DE LOS ESTILOS PRINCIPALES */
+
+#toogle-container {
+    display: flex;
+    flex-flow: row;
+}
+
+/* ANIMACIONES DE LOS SVG */
+
+.svg {
+    animation: svg linear 1s;
+    animation-delay: calc(var(--order) * 100ms);
+}
+
+@keyframes svg {
+    0% {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* BOTON DE CAMBIO */
+
+.not-visible {
+    display: none;
+}
+
+/* WAVES */
+
+.separador {
+    aspect-ratio: 3600/1200;
+    /* width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
