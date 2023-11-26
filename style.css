@@ -2,12 +2,14 @@
     /* outline: solid 1px; */
     color: antiquewhite;
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 
 :root {
     --background: #001220;
     --background2: #021c30;
     --light: #003762;
+    --withe: #ffffff;
 }
 
 /* ROOT */
@@ -23,6 +25,7 @@ body {
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
     /* background-color: aqua; */
     color: antiquewhite;
     position: relative;
@@ -30,15 +33,36 @@ header {
     height: 70vh;
 }
 
+.title-border {
+    color: var(--background);
+    font-size: 4rem;
+    margin-bottom: 0;
+
+    z-index: 2;
+
+    text-shadow: 
+                -1px -1px 0 var(--withe),
+                1px -1px 0 var(--withe),
+                1px 1px 0 var(--withe),
+                -1px 1px 0 var(--withe);
+}
+
+header p {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+header p span {
+    color: var(--withe);
+    font-weight: bolder;
+}
+
+
 .blob {
     position: absolute;
 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 400px;
-    height: 400px;
+    /* width: 400px;
+    height: 400px; */
 
     z-index: 1;
     overflow:hidden;
@@ -48,6 +72,12 @@ header {
 .blob:nth-child(2) {
     filter: blur(50px);
     
+}
+
+.blob1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
 }
 
 section {
@@ -66,14 +96,21 @@ main {
 }
 
 .element-container {
-    width: 40%;
+    max-width: 40%;
+    min-width: 410px;
 
-    display: flex;
+    /* display: flex;
     flex-flow: column;
-    align-items: center;
+    align-items: center; */
     
 
     z-index: 2;
+}
+
+section .element-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 
