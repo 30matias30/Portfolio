@@ -1,0 +1,20 @@
+main .element-container       {
+    display: flex;
+    justify-content: center;
+}
+
+main h1 {
+    color: var(--background);
+    font-size: 4rem;
+    margin-bottom: 0;
+
+    z-index: 2;
+
+    text-shadow: 
+                -1px -1px 0 var(--withe),
+                1px -1px 0 var(--withe),
+                1px 1px 0 var(--withe),
+                -1px 1px 0 var(--withe);
+
+    padding: 1rem;
+}

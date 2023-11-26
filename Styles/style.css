@@ -10,7 +10,11 @@
     --background2: #021c30;
     --light: #003762;
     --withe: #ffffff;
-    --soft-white: antiquewhite;;
+    --soft-white: antiquewhite;
+    --html: #FF6D00;
+    --css: #039BE5;
+    --js: #ffd600;
+    --php: #dcd5f2;
 }
 
 /* ROOT */
