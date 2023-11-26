@@ -25,8 +25,29 @@ header {
     justify-content: center;
     /* background-color: aqua; */
     color: antiquewhite;
+    position: relative;
 
     height: 70vh;
+}
+
+.blob {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 400px;
+    height: 400px;
+
+    z-index: 1;
+    overflow:hidden;
+    
+}
+
+.blob:nth-child(2) {
+    filter: blur(50px);
+    
 }
 
 section {
@@ -46,7 +67,16 @@ main {
 
 .element-container {
     width: 40%;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+
+    z-index: 2;
 }
+
+
 
 /* FIN DE LOS ESTILOS PRINCIPALES */
 
@@ -74,6 +104,14 @@ main {
     }
 }
 
+/* SKILLS CONTAINER */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 10px;
+}
+
 /* BOTON DE CAMBIO */
 
 .not-visible {
@@ -89,3 +127,4 @@ main {
     background-position: center;
     background-size: cover; */
 }
+
