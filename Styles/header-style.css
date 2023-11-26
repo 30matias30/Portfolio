@@ -1,0 +1,57 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    color: antiquewhite;
+    position: relative;
+
+    height: 70vh;
+}
+
+.title-border {
+    color: var(--background);
+    font-size: 4rem;
+    margin-bottom: 0;
+
+    z-index: 2;
+
+    text-shadow: 
+                -1px -1px 0 var(--withe),
+                1px -1px 0 var(--withe),
+                1px 1px 0 var(--withe),
+                -1px 1px 0 var(--withe);
+}
+
+header p {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+header p span {
+    color: var(--withe);
+    font-weight: bolder;
+}
+
+
+.blob {
+    position: absolute;
+
+    /* width: 400px;
+    height: 400px; */
+
+    z-index: 1;
+    overflow:hidden;
+    
+}
+
+.blob:nth-child(2) {
+    filter: blur(50px);
+    
+}
+
+.blob1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+}

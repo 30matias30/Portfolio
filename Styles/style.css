@@ -1,0 +1,70 @@
+* {
+    /* outline: solid 1px; */
+    color: antiquewhite;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --background: #001220;
+    --background2: #021c30;
+    --light: #003762;
+    --withe: #ffffff;
+    --soft-white: antiquewhite;;
+}
+
+/* ROOT */
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    /* background-color: red; */
+
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    background-color: var(--light);
+
+    margin-top: -4px;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    /* background-color: aquamarine; */
+}
+
+.element-container {
+    max-width: 40%;
+    min-width: 410px;
+
+    /* display: flex;
+    flex-flow: column;
+    align-items: center; */
+    
+
+    z-index: 2;
+}
+
+section .element-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+
+/* WAVES */
+
+.separador {
+    aspect-ratio: 3600/1200;
+    /* width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
