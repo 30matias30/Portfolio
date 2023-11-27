@@ -41,6 +41,8 @@ main h1 {
 .work-img {
     width: 30%;
     height: 80%;
+
+    animation: border-blob 30s infinite;
 }
 
 .work-img img{
@@ -107,4 +109,20 @@ li {
 
 .php {
     background-color: var(--php);
+}
+
+
+@keyframes border-blob {
+    
+    0%, 100% {
+        border-radius: 100% 0% 100% 0% / 0% 100% 0% 100%;
+    }
+
+    50% {
+        border-radius: 0% 100% 0% 100% / 100% 0% 100% 0%;
+    }
+}
+
+#waviZ {
+    z-index: 2;
 }

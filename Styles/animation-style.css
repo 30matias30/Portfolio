@@ -31,6 +31,10 @@
     animation: wave5 linear 100s infinite;
 }
 
+.wave6 {
+    animation: wave5 linear 100s infinite;
+}
+
 @keyframes wave {
 
     0% {
@@ -133,5 +137,19 @@
 
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes wave6 {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5%);
+    }
+
+    50% {
+        transform: translateX(5%);
     }
 }
