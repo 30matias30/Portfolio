@@ -1,6 +1,6 @@
 * {
     /* outline: solid 1px; */
-    color: antiquewhite;
+    /* color: var(--soft-white); */
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
@@ -9,8 +9,8 @@
     --background: #001220;
     --background2: #021c30;
     --light: #003762;
-    --withe: #ffffff;
-    --soft-white: antiquewhite;
+    --white: #EEF8FF;
+    --soft-white: #dcf2ff;
     --html: #FF6D00;
     --css: #039BE5;
     --js: #ffd600;
@@ -72,3 +72,9 @@ section .element-container {
     background-size: cover; */
 }
 
+/* LINK */
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}

@@ -7,13 +7,16 @@
     font-size: 3rem;
     padding: 5px;
 
-    color: var(--light);
+    color: var(--soft-white);
 
-    text-shadow: 
-    -1px -1px 0 var(--withe),
-    1px -1px 0 var(--withe),
-    1px 1px 0 var(--withe),
-    -1px 1px 0 var(--withe);
+    letter-spacing: 3px;
+    font-weight: normal;
+
+    /* text-shadow: 
+    -1px -1px 0 var(--white),
+    1px -1px 0 var(--white),
+    1px 1px 0 var(--white),
+    -1px 1px 0 var(--white); */
 }
 
 
@@ -48,7 +51,7 @@
 	justify-content: center;
 	width: 40%;
 	height: 50px;
-	/* color: #fff; */
+    color: var(--soft-white);
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	font-weight: 500;

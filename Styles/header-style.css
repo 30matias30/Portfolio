@@ -3,7 +3,7 @@ header {
     justify-content: center;
     align-items: center;
     /* background-color: aqua; */
-    color: antiquewhite;
+    color: var(--soft-white);
     position: relative;
 
     height: 70vh;
@@ -14,13 +14,15 @@ header {
     font-size: 4rem;
     margin-bottom: 0;
 
+    letter-spacing: 3px;
+
     z-index: 2;
 
     text-shadow: 
-                -1px -1px 0 var(--withe),
-                1px -1px 0 var(--withe),
-                1px 1px 0 var(--withe),
-                -1px 1px 0 var(--withe);
+                -1px -1px 0 var(--white),
+                1px -1px 0 var(--white),
+                1px 1px 0 var(--white),
+                -1px 1px 0 var(--white);
 }
 
 header p {
@@ -29,7 +31,7 @@ header p {
 }
 
 header p span {
-    color: var(--withe);
+    color: var(--white);
     font-weight: bolder;
 }
 
