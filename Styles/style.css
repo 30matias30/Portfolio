@@ -1,6 +1,6 @@
 * {
-    /* outline: solid 1px; */
-    /* color: var(--soft-white); */
+    outline: solid 1px;
+    color: var(--soft-white);
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }

@@ -6,6 +6,7 @@ main .element-container       {
     max-width: 40%;
     width: 730px;
     min-width: 410px;
+    overflow-y: hidden;
 }
 
 main h1 {
@@ -34,18 +35,33 @@ main h1 {
     width: 90%;
     height: 25vh;
 
+    border-radius: 10px;
+
+    cursor: pointer;
+
     justify-content: space-around;
     align-items: center;
+    transition: 200ms
+}
+
+.work-card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow:  5px 5px 30px rgba(0, 0, 0, 0.4);
+    scale: 1.02;
+    
+    transition: 200ms;
 }
 
 .work-img {
     width: 30%;
     height: 80%;
 
-    animation: border-blob 30s infinite;
+    border-radius: 10px;
+
+    /* animation: border-blob 30s infinite; */
 }
 
-.work-img img{
+.work-img img {
     width: fit-content;
     height: fit-content;
 }
@@ -84,6 +100,13 @@ ul {
     background-size: cover;
     background-position: center;
 }
+
+.imgW2 {
+    background-image: url(/Pictures/Works/Front/Memento-Mori.png);
+    background-size: cover;
+    background-position: center;
+}
+
 
 /* TANGS */
 
@@ -125,4 +148,12 @@ li {
 
 #waviZ {
     z-index: 2;
+}
+
+/* MEDIA */
+
+#social-media {
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
 }

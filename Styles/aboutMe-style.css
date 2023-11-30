@@ -4,6 +4,12 @@
     align-items: center;
 }
 
+#aboutMe .element-container {
+    flex-flow: row;
+    justify-content: center;
+    height: max-content;
+}
+
 #aboutMe h2 {
 
     font-size: 3rem;
@@ -11,6 +17,15 @@
     color: var(--soft-white);
     letter-spacing: 3px;
     font-weight: normal;
+}
+
+/* TEXT */
+
+.aboutMe-txt-container {
+    flex-wrap: wrap;
+    width: 50%;
+
+    background-color: yellow;
 }
 
 /*  PROFILE PICTURE */
@@ -23,7 +38,9 @@
     align-items: center;
     flex-wrap: wrap;
 
-    transform: scale(0.9);
+    transform: scale(0.7);
+
+    background-color: rebeccapurple;
 }
 
 .box {
@@ -119,4 +136,9 @@
     15%, 35%, 55%, 75%, 95% {
         border-radius: 44% 56% 90% 10% / 84% 19% 81% 16% ;
     }
+}
+
+
+#social-media.element-container svg {
+    margin: 5px;
 }
